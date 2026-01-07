@@ -1,0 +1,90 @@
+body, html {
+  background-color: #141414;
+  color: #f9f9f9;
+  font-family: serif;
+  margin: 0;
+  border: 0;
+  padding: 0;
+  height: 100%;
+}
+
+.container {
+  margin: 0;
+  border: 0;
+  padding: 0;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 100vh;
+}
+
+h2 {
+  font-family: Bodoni;
+  margin-block-start: 0;
+  margin-block-end: 0;
+  font-size: 6dvw;
+  font-weight: 400;
+}
+
+.count {
+  font-size: 10dvw;
+}
+
+.unit {
+  font-size: 2dvw
+}
+
+.button {
+  background-color: #141414;
+  border-radius: 7px;
+  border: 1.5px solid #f9f9f9;
+  color: #f9f9f9;
+  padding: 12px 28px;
+  margin: 0 5px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-family: Bodoni;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.button:hover{
+  background-color: #f9f9f9;
+  color: #141414;
+}
+
+@media screen and (max-width: 768px) {
+  .button {
+    background-color: #141414;
+    border: 1.5px solid #f9f9f9;
+    color: #f9f9f9;
+    padding: 7px 15px;
+    margin: 0 3px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-family: Bodoni;
+    font-size: 12px;
+    cursor: pointer;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .button {
+    background-color: #141414;
+    border: 1.5px solid #f9f9f9;
+    color: #f9f9f9;
+    padding: 6px 12px;
+    margin: 0 0px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-family: Bodoni;
+    font-size: 9px;
+    cursor: pointer;
+  }
+}

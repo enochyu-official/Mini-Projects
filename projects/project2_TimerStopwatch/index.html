@@ -3,9 +3,28 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Project 2: Timer and Stopwatch</title>
+  <title>Project 2: Stopwatch</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  
+  <div class="container">
+    <h2>STOPWATCH</h2>
+    <div id="stopwatch">
+      <span class="count" id="hour">00</span>
+      <span class="unit">HR</span>
+      <span class="count" id="minute">00</span>
+      <span class="unit">MIN</span>
+      <span class="count" id="second">00</span>
+      <span class="unit">SEC</span>
+      <span class="count" id="millisecond">000</span>
+      <span class="unit">MS</span>
+    </div>
+    <div id="buttons">
+      <button type="button" class="button" id="startBtn">Start</button>
+      <button type="button" class="button" id="pauseBtn">Pause</button>
+      <button type="button" class="button" id="resetBtn">Reset</button>
+    </div>
+  </div>
+  <script src="script.js"></script>
 </body>
 </html>

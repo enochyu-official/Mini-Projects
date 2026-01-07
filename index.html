@@ -5,14 +5,127 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Enoch's JavaScript Mini-Projects</title>
   <link rel="stylesheet" href="/assets/main.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
 </head>
 <body>
   <h1>Enoch's JavaScript Mini-Projects</h1>
+  <div class="social-icons">
+    <a href="https://www.youtube.com/channel/UCCnkn0YRKStraznc7kuICRg" target="_blank" rel="noopener" aria-label="Youtube">
+      <i class="fab fa-youtube"></i>
+    </a>
+    <a href="https://enochyu-official.github.io/blog/" target="_blank" rel="noopener" aria-label="Youtube">
+      <i class="fa-solid fa-blog"></i>
+    </a>
+    <a href="https://github.com/enochyu-official" target="_blank" rel="noopener" aria-label="GitHub">
+      <i class="fab fa-github"></i>
+    </a>
+    <a href="https://www.linkedin.com/in/enoch-yu-94448939a/" target="_blank" rel="noopener" aria-label="LinkedIn">
+      <i class="fab fa-linkedin"></i>
+    </a>
+  </div>
 
-  <a href="/projects/project1_CoffeeShop/index.html">Project 1: Enoch's Coffee Shop</a>
+  <a href="https://github.com/enochyu-official/js-mini-projects" target="_blank" rel="noopener noreferrer" id="source">Source Code of the Project</a>
 
+  <div id="text">
+    <p>
+    Welcome to my JavaScript mini-projects!! As an ardent high school sophomore who loves math and programming, I decided to create mini-projects with JavaScript. The purpose of this project is to document my learning journey and to actively engage in learning different programming languages on my own.
+
+    Each project consists of three parts: website, source code, and detailed explanation. By researching and reading different articles, I was able to build the projects. To document my though process and to optimistically contribute to the programming community, I wrote a detailed explanation for each script in my personal blog. However, because I was not enrolled in official course for computer science, the scripts may not be in their ideal state. Therefore, please feel free to leave any feedback or comments in my blog for each project for improvements!
+    </p>
+  </div>
+
+  <div id="projectList">
+    <table>
+      <caption>List of Projects</caption>
+      <tr>
+        <th>Project</th>
+        <th>Source Code</th>
+        <th>Detailed Explanation</th>
+      </tr>
+
+      <tr>
+        <td>
+          <a href="https://enochyu-js.pages.dev/projects/project1_CoffeeShop/" target="_blank" rel="noopener noreferrer">
+            Project 1: Coffee Shop
+          </a>
+        </td>
+        <td>
+          <a href="https://github.com/enochyu-official/js-mini-projects/tree/main/projects/project1_CoffeeShop" target="_blank" rel="noopener noreferrer">
+            Source Code
+          </a>
+        </td>
+        <td>
+          <a href="https://enochyu-official.github.io/blog/posts/post5/" target="_blank" rel="noopener noreferrer">
+            Detailed Explanation
+          </a>
+        </td>
+      </tr>
+
+      <tr>
+        <td>
+          <a href="https://enochyu-js.pages.dev/projects/project2_TimerStopwatch/" target="_blank" rel="noopener noreferrer">
+            Project 2: Stopwatch
+          </a>
+        </td>
+        <td>
+          <a href="https://github.com/enochyu-official/js-mini-projects/tree/main/projects/project2_TimerStopwatch" target="_blank" rel="noopener noreferrer">
+            Source Code
+          </a>
+        </td>
+        <td>
+          <a href="" target="_blank" rel="noopener noreferrer">
+            Detailed Explanation
+          </a>
+        </td>
+      </tr>
+    </table>
+  </div>
+
+  <div id="text">
+    <h2>
+    Below are the interactive preview of each project. Although responsive components were used to create each project, it may not look pretty in the preview below. Thus, please access each project with the links above!!
+    </h2>
+  </div>
+
+  <div id="previewList">
+    <div class="previewBox">
+      <div class="previewLink">
+        <a href="/projects/project1_CoffeeShop/index.html">Project 1: Coffee Shop</a>
+      </div>
+      <div class="projectPreview">
+        <iframe src="https://enochyu-js.pages.dev/projects/project1_CoffeeShop/"></iframe>
+      </div>
+    </div>
+
+    <div class="previewBox">
+      <div class="previewLink">
+        <a href="/projects/project2_TimerStopwatch/index.html">Project 2: Stopwatch</a>
+      </div>
+      <div class="projectPreview">
+        <iframe src="https://enochyu-js.pages.dev/projects/project2_TimerStopwatch/"></iframe>
+      </div>
+    </div>
+  </div>
   <div id="stats"></div>
-  <div id="footer-import"></div>
-  <script src="/assets/main.js"></script>
 </body>
+<footer> 
+  <p>
+    &copy; <span id="year"></span> Enoch Yu · 
+    <a href="https://www.apache.org/licenses/LICENSE-2.0" target="_blank" rel="noopener noreferrer">Apache License 2.0</a>
+  </p>
+</footer>
+<script>
+  const year = new Date(Date.now()).getFullYear();
+  document.getElementById("year").textContent = year;
+</script>
+<script>
+  var t = setInterval(function() {
+    if (window.goatcounter && window.goatcounter.visit_count) {
+      clearInterval(t)
+      window.goatcounter.visit_count({ append: '#stats' })
+    }
+  }, 100)
+</script>
+<script data-goatcounter="https://enochyu-js.goatcounter.com/count"
+        src="//gc.zgo.at/count.js"></script>
 </html>
