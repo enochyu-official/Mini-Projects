@@ -199,13 +199,23 @@ table {
 
 @media (max-width: 600px) {
   table {
+    display: table;
+    table-layout: fixed;
+    word-wrap: break-word;
     border-collapse: collapse;
     border: 2px solid #f0e9eb;
-    width: 70%;
+    max-width: 70vw;
   }
 
-  caption { font-size: 15px; }
-  table { font-size: 7px; }
+  caption { font-size: 18px !important; }
+  table th {
+    font-size: 12px !important;
+    padding: 5px 3px;
+  }
+  table td {
+    font-size: 10px !important;
+    padding: 5px 3px;
+  }
 }
 
 
@@ -260,15 +270,27 @@ a {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 70%;
+    min-width: 90%;
     height: 5dvh;
     border: 2px solid #4888C8;
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   .previewLink {
     font-size: 0.7em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 90%;
+    height: 5dvh;
+    border: 2px solid #4888C8;
+  }
+}
+
+@media (max-width: 992px) {
+  .previewLink {
+    font-size: 0.8em;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -284,7 +306,15 @@ a {
   border: 2px solid #4888C8;
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 767px) {
+  .projectPreview {
+    min-width: 90%;
+    height: 60dvh;
+    border: 2px solid #4888C8;
+  }
+}
+
+@media (max-width: 992px) {
   .projectPreview {
     width: 70%;
     height: 60dvh;
