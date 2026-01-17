@@ -1,5 +1,5 @@
 // Project 1: Coffee Shop
-
+// Declaring Variables
 let order;
 let price;
 let nextSlide;
